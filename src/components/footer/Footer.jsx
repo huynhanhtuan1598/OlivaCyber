@@ -1,6 +1,7 @@
-import { Image } from 'antd'
-import Link from 'antd/es/typography/Link'
-import React from 'react'
+import { Image } from "antd";
+import Link from "antd/es/typography/Link";
+import React from "react";
+import course1 from "../../assets/images/course-1.jpg";
 
 const Footer = () => {
   return (
@@ -10,38 +11,46 @@ const Footer = () => {
         {/* left */}
         <div className="w-full md:w-1/2  lg:w-1/4 flex flex-col gap-8">
           <a href="/">
-            <div className="text-2xl tracking-wide font-bold text-white">Quick Link</div>
+            <div className="text-2xl tracking-wide font-bold text-white">
+              Quick Link
+            </div>
           </a>
-          <a href="/" className='hover:text-base'>
+          <a href="/" className="hover:text-base">
             <div className=" tracking-wide font-bold text-white">About Us</div>
           </a>
-          <a href="/" className='hover:text-base'>
-            <div className=" tracking-wide font-bold text-white">Contact Us</div>
+          <a href="/" className="hover:text-base">
+            <div className=" tracking-wide font-bold text-white">
+              Contact Us
+            </div>
           </a>
-          <a href="/" className='hover:text-base'>
-            <div className=" tracking-wide font-bold text-white ">Privacy Policy</div>
+          <a href="/" className="hover:text-base">
+            <div className=" tracking-wide font-bold text-white ">
+              Privacy Policy
+            </div>
           </a>
-          <a href="/" className='hover:text-base'>
-            <div className=" tracking-wide font-bold text-white">Term & Condition</div>
+          <a href="/" className="hover:text-base">
+            <div className=" tracking-wide font-bold text-white">
+              Term & Condition
+            </div>
           </a>
-          <a href="/" className='hover:text-base'>
-            <div className=" tracking-wide font-bold text-white">FAQs & Help</div>
+          <a href="/" className="hover:text-base">
+            <div className=" tracking-wide font-bold text-white">
+              FAQs & Help
+            </div>
           </a>
         </div>
         {/* center */}
         <div className="w-full md:w-1/2  lg:w-1/4 flex flex-col gap-6 ">
-        <h1 className="font-bold text-2xl text-white">Contact</h1>
-          <p className='font-bold text-white'>
-           123 Street, New York, USA
-          </p>
-          <p className='font-bold text-white'>+01234567890</p>
-          <p className='font-bold text-white  '> info@gmail.com</p> 
+          <h1 className="font-bold text-2xl text-white">Contact</h1>
+          <p className="font-bold text-white">123 Street, New York, USA</p>
+          <p className="font-bold text-white">+01234567890</p>
+          <p className="font-bold text-white  "> info@gmail.com</p>
         </div>
         <div className="col-lg-3 col-md-6">
-          <h4 className='text-white mb-3 font-bold text-2xl'>Gallery</h4>
+          <h4 className="text-white mb-3 font-bold text-2xl">Gallery</h4>
           <div className="row g-2 pt-2">
             <div className="col-4">
-              <Image src="./course-1.jpg" alt="" />
+              <Image src={course1} alt="" />
             </div>
             <div className="col-4"></div>
             <div className="col-4"></div>
@@ -66,9 +75,7 @@ const Footer = () => {
             <button className="w-1/4 bg-[#F35C7A] text-white">JOIN</button>
           </div>
           <span className="font-semibold">Secure Payments</span>
-          <div className="flex justify-between">
-           
-          </div>
+          <div className="flex justify-between"></div>
         </div>
       </div>
       {/* bottom */}
@@ -80,13 +87,13 @@ const Footer = () => {
             <span className="font-medium">Viet Nam | TP Ho Chi Minh</span>
           </div>
           <div className="">
-          <span className="text-gray-500 mr-4">Currency</span>
-          <span className="font-medium">$ USD</span>
+            <span className="text-gray-500 mr-4">Currency</span>
+            <span className="font-medium">$ USD</span>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
